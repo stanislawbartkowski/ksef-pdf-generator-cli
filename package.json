@@ -1,6 +1,6 @@
 {
   "name": "@akmf/ksef-fe-invoice-converter",
-  "version": "1.1.0",
+  "version": "1.1.9",
   "bin": {
     "ksef-pdf": "./dist-cli/ksef-pdf.js"
   },
@@ -55,6 +55,9 @@
   },
   "dependencies": {
     "commander": "^13.1.0",
+    "i18next": "^25.8.4",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
     "pdfmake": "^0.2.20",
     "xml-js": "^1.6.11"
   }
