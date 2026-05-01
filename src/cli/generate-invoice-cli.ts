@@ -3,6 +3,7 @@ import { generateFA1 } from '../lib-public/FA1-generator';
 import { generateFA2 } from '../lib-public/FA2-generator';
 import { generateFA3 } from '../lib-public/FA3-generator';
 import { generateFARR } from '../lib-public/FARR-generator';
+import { initI18next } from '../lib-public/i18n/i18n-init';
 import { AdditionalDataTypes } from '../lib-public/types/common.types';
 import { Faktura as Faktura1 } from '../lib-public/types/fa1.types';
 import { Faktura as Faktura2 } from '../lib-public/types/fa2.types';
@@ -16,6 +17,7 @@ export async function generateInvoiceCLI(
   outputPath: string,
   additionalData: AdditionalDataTypes
 ): Promise<void> {
+  await initI18next();
   const xml: unknown = parseXMLFromPath(inputPath);
   const wersja: string = (xml as any)?.Faktura?.Naglowek?.KodFormularza?._attributes?.kodSystemowy;
 

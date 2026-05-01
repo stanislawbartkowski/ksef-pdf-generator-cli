@@ -16,3 +16,4 @@ out
 .vscode
 *.swp
 k/
+dist-cli/
