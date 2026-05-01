@@ -51,12 +51,14 @@ export function generateNaglowek(
         { text: i18n.t('invoice.header.ksefPart3'), bold: true, fontSize: 18 },
       ],
     },
-    { ...(formatText(i18n.t('invoice.header.invoiceNumberLabel'), FormatTyp.ValueMedium) as ContentText), alignment: Position.RIGHT },
+    { text: '', ...(formatText(i18n.t('invoice.header.invoiceNumberLabel'), FormatTyp.ValueMedium) as ContentText), alignment: Position.RIGHT },
     {
+      text: '',
       ...(formatText(getValue(fa?.P_2), FormatTyp.HeaderPosition) as ContentText),
       alignment: Position.RIGHT,
     },
     {
+      text: '',
       ...(formatText(invoiceName, [FormatTyp.ValueMedium, FormatTyp.Default]) as ContentText),
       alignment: Position.RIGHT,
     },

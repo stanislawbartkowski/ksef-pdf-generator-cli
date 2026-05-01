@@ -27,14 +27,17 @@ export function generateNaglowek(fa?: Fa, additionalData?: AdditionalDataTypes):
             ],
         },
         {
+            text: '',
             ...(formatText(i18n.t('invoice.header.invoiceNumberLabel'), FormatTyp.ValueMedium) as ContentText),
             alignment: Position.RIGHT
         },
         {
+            text: '',
             ...(formatText(getValue(fa?.P_4C), FormatTyp.HeaderPosition) as ContentText),
             alignment: Position.RIGHT,
         },
         {
+            text: '',
             ...(formatText(invoiceName, [FormatTyp.ValueMedium, FormatTyp.Default]) as ContentText),
             alignment: Position.RIGHT,
         },
