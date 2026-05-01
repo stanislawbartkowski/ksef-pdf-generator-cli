@@ -30,7 +30,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/cli/index.ts'),
       formats: ['es'],
-      fileName: () => 'ksef-pdf.js',
+      fileName: () => 'ksef-pdf.mjs',
     },
     outDir: path.resolve(__dirname, 'dist-cli'),
     emptyOutDir: true,
